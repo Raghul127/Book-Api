@@ -24,7 +24,6 @@ $_SESSION['message']="";
 	<title>Profile</title>
 	<link rel="icon" type="image/png" href="assets/favicon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
@@ -48,7 +47,7 @@ $_SESSION['message']="";
 		    position: fixed;
 		    top: 8%;
 		    left: 0;
-		    background-color: #e9e9e9;
+		    background-color: lightblue;
 		    overflow-x: hidden;
 		    padding-top: 1.97vh;   
 		    box-shadow: 0 1px 2px 0 rgba(0,0,0,.45); 
@@ -61,6 +60,7 @@ $_SESSION['message']="";
 			margin-top: 16%;
 			font-family: 'Comic Sans MS';
 			font-size: 1.4em;
+			font-weight: bold;
 			color: darkred;
 			padding-bottom: 15px;
 		}
@@ -78,7 +78,7 @@ $_SESSION['message']="";
 		}
 
 		.sidenav a.sidenavlinks:hover{
-		    background-color: #645045;
+		    background-color: blue;
 			color: white;
 		}
 
@@ -100,12 +100,12 @@ $_SESSION['message']="";
 		}
 
 		.active{
-		    background-color: #c9c9c9;
+		    background-color: #2980B9;
 		}
 
 		.topnav{
 			overflow: hidden;
-			background-color: #e9e9e9;
+			background-color: lightblue;
 			box-shadow: 0 1px 2px 0 rgba(0,0,0,.45);
 		}
 
@@ -135,11 +135,11 @@ $_SESSION['message']="";
 		}
 
 		.topnav a.active{
-			background-color: #c9c9c9;
+			background-color: #2980B9;
 		}
 
 		.topnav a.options:hover{
-			background-color: #645045;
+			background-color: blue;
 			color: white;
 		}
 
@@ -304,8 +304,8 @@ $_SESSION['message']="";
 		.modal-header{
 			border-radius: 10px;
 		    padding: 2px 16px;
-		    background-color: #645045;
-		    color: white;
+		    background-color: lightblue;
+		    color: black;
 		}
 
 		.modal-body{
@@ -514,9 +514,9 @@ $_SESSION['message']="";
 
 
 	<div id="navbar" class="topnav">
-		<a id="title" class="title" onclick="home()">Your Library</a>
+		<a id="title" class="title" onclick="home()">My Library</a>
 		<a class="options" href="#home" onclick="home()">Home</a>
-	  	<a class="active options" onclick="profile()">Profile</a>
+	  	<a class="active options" onclick="profile()">My Profile</a>
 	  	<span class="search-container">
 	      	<input id="searchValue" type="text" placeholder="Search" name="search" onfocus="searchSuggestions(this.value);" onkeyup="searchSuggestions(this.value);">
 	      	<select id="selectId">
@@ -536,7 +536,7 @@ $_SESSION['message']="";
 		<a id="currentlyReading" class="sidenavlinks" onclick="shelfClick(this);">Currently Reading</a>
 		<a id="finishedReading" class="sidenavlinks" onclick="shelfClick(this);">Finished Reading</a>
 		<a class="sidenavlinks" onclick="logout();">Logout</a>
-		<div class="sidenavlinks labelsOPT">Bookshelves:</div>
+		<div class="sidenavlinks labelsOPT"><bold>Bookshelves:</bold></div>
 		<a class="sidenavlinks" onclick="openNewShelfModal();">Add New Shelf</a>
 		<a class="sidenavlinks" onclick="shelfClick(this);">Favourites</a>
 	</div>
