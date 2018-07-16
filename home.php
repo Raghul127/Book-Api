@@ -24,7 +24,6 @@ $_SESSION['message']="";
 	<title>HomePage</title>
 	<link rel="icon" type="image/png" href="assets/favicon.png">
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-	<link href='https://fonts.googleapis.com/css?family=Sofia' rel='stylesheet'>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
@@ -54,14 +53,14 @@ $_SESSION['message']="";
 
 		.topnav{
 			overflow: hidden;
-			background-color: #e9e9e9;
+			background-color: lightblue;
 			box-shadow: 0 1px 2px 0 rgba(0,0,0,.45);
 		}
 
 		.topnav a{
 			float: left;
 			display: block;
-			color: black;
+			color: white;
 			text-align: center;
 			padding: 15px 36px;
 			text-decoration: none;
@@ -84,11 +83,11 @@ $_SESSION['message']="";
 		}
 
 		.topnav a.active{
-			background-color: #c9c9c9;
+			background-color: #2980B9;
 		}
 
 		.topnav a.options:hover{
-			background-color: #645045;
+			background-color: blue;
 			color: white;
 		}
 
@@ -271,9 +270,9 @@ $_SESSION['message']="";
 </head>
 <body>
 	<div id="navbar" class="topnav">
-		<a class="title" onclick="home()">Your Library</a>
+		<a class="title" onclick="home()">My Library</a>
 		<a class="active options" href="#home" onclick="home()">Home</a>
-	  	<a class="options" onclick="profile()">Profile</a>
+	  	<a class="options" onclick="profile()">My Profile</a>
 	  	<span class="search-container">
 	      	<input id="searchValue" type="text" placeholder="Search" name="search" onfocus="searchSuggestions(this.value);" onkeyup="searchSuggestions(this.value);">
 	      	<select id="selectId">
